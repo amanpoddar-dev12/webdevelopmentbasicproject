@@ -10,11 +10,18 @@
   https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
   -->
   <style>
+    /* *{
+      
+      flex-direction: column;
+      height: 600px;
+      width: 50px;
+    } */
     .container {
       color: white;
       border: 5px solid gold;
       display: flex;
-      
+      flex-direction: column;
+      display: inline-flex;
       
     }
  
@@ -30,6 +37,13 @@ children of the .container class.
     .blue {background-color: #4834d4;}
     .indigo {background-color: #30336b;}
     .purple {background-color: #be2edd;}
+
+    /* .red,.orange,.yellow,.green,.blue,.indigo,.purple{
+      flex-basis: 100px;
+    } */
+    .container>*{
+      flex-basis: 100px;
+    }
   </style>
 </head>
 
