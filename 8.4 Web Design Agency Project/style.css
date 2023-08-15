@@ -12,10 +12,45 @@ body {
 
 h1 {
   font-size: 5rem;
+  
 }
-
+.tile-image{
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+.card{
+  width: 45%;
+}
+.right{
+  float: right;
+}
+.left{
+  float: left;
+}
 footer {
   text-align: right;
   color: midnightblue;
+}
+@media (max-width: 680px){
+  .logo{
+        width: 100px;
+  }
+  h1{
+    font-size: 55px;
+    text-align: center;
+  }
+  .card{
+    display: block;
+    width: 100%;
+    text-align: justify;
+    margin-bottom: 30px;
+  }
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
 }
 
