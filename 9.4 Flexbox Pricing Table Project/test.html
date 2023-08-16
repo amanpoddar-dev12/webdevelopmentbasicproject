@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>test flex</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+          .container{
+            display: flex;
+            flex-wrap:  wrap;
+            gap: 2rem;
+            justify-content: center;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+          }
+          .box{  
+            list-style: none;
+            background-color: blue;
+            padding: 10px;
+            width: 300px;
+            height: 200px;
+            padding: 20px;
+          }
+          li{
+            padding: 10px;
+            text-align: center;
+          }
+
+          @media(max-width:745px){
+            .container{
+                height: 100%;
+                flex-direction: column;
+            }
+            .box{  
+           
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+          }
+          }
+            </style>
+    </head>
+    <body>
+    
+        <div class="container">
+            <div class="box">
+                <li>box-1</li>
+                <li>box-1</li>
+                <li>box-1</li>
+                <li>box-1</li>
+            </div>
+            <div class="box">
+                <li>box-2</li>
+                <li>box-2</li>
+                <li>box-2</li>
+                <li>box-2</li>
+            </div>
+            <div class="box">
+                <li>box-3</li>
+                <li>box-3</li>
+                <li>box-3</li>
+                <li>box-3</li>
+            </div>
+
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

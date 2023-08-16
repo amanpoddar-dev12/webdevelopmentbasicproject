@@ -1,0 +1,52 @@
+.flex-container{
+    background-color: brown;
+    display: flex;
+    /* height: 70vh; */
+    /* flex-direction: column; */
+    /* flex-direction: row; */
+     /* flex-wrap: nowrap; */
+     /* flex-wrap: wrap; */
+     /* flex-flow: row wrap; */
+     /* justify-content: center; */
+     /* flex-wrap: wrap-reverse; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+     /* align-items: stretch; */
+     /* align-items: center; */
+     /* align-content: center;
+     justify-content: center; */
+     
+}
+.flex-child{
+    background-color: antiquewhite;
+    margin: 20px;
+    padding: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+}
+
+#one{
+    /* order: 3; */
+    /* flex-grow: 3; */
+    /* flex-shrink: 10; */
+    /* flex-basis: 200px; */
+}
+#two{
+     /* order: 2; */
+     /* flex-grow: 1; */
+     /* flex-shrink: 5;  */
+}
+
+#three{
+    /* order: 1; */
+    /* flex-grow: 1; */
+     /* flex-shrink: 8; */
+     /* flex-basis: 100px; */
+}

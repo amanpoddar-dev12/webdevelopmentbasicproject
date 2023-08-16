@@ -10,17 +10,61 @@
     body {
       font-family: 'Sono', sans-serif;
     }
-
-    /* Hint: What can you do with a media query and flexbox? */
-    @media (max-width: 1250px) {
-      
+    .pricing-container{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      height: 100vh;
+      gap: 2em;
+    }
+    .pricing-plan{ 
+      /* display: flex;
+      flex-direction: column;
+      */
+      /* align-items: center; */
+      text-align: center;
+      border: 5px solid skyblue;
+      background-color: rgb(132, 211, 211);
+      padding: 50px;
+    
+        }
+      .plan-features{
+        list-style: none;
+        font-weight: bolder;
+        padding: 10px;
+      }
+      li{
+        padding:5px;
+      }
+      .plan-title{
+        font-size: 20px;
+        font-weight: bolder;
+      }
+      .plan-price{
+        font-size: 30px;
+        font-weight: bolder;
+      }
+      .plan-button{
+        margin-left: -25px;
+        width: 60px;
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        background-color: orangered;
+      }
+        @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }  
     }
   </style>
 </head>
 
 <body>
-  <div class="pricing-container">
-    <div class="pricing-plan">
+  <div class="pricing-container" >
+    <div class="pricing-plan" id="container-1">
       <div class="plan-title">Basic</div>
       <div class="plan-price">$9.99/month</div>
       <ul class="plan-features">
@@ -30,7 +74,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
-    <div class="pricing-plan">
+    <div class="pricing-plan" id="container-2">
       <div class="plan-title">Standard</div>
       <div class="plan-price">$19.99/month</div>
       <ul class="plan-features">
@@ -40,7 +84,7 @@
       </ul>
       <button class="plan-button">Sign Up</a>
     </div>
-    <div class="pricing-plan">
+    <div class="pricing-plan" id="container-3">
       <div class="plan-title">Premium</div>
       <div class="plan-price">$49.99/month</div>
       <ul class="plan-features">
@@ -49,8 +93,18 @@
         <li>✅ 24/7 Support</li>
       </ul>
       <button class="plan-button">Sign Up</a>
+        
     </div>
-  </div>
+    <!-- <div class="pricing-plan" id="container-3">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+  </div> -->
 
 </body>
 
